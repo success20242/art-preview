@@ -5,18 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Art of the Day | Global Inspirations</title>
 
-  <!-- Favicon -->
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
   <!-- SEO Meta -->
   <meta name="description" content="Experience the art revolution – AI-generated masterpieces fused with global cultural inspirations, updated daily." />
-  <link rel="canonical" href="https://yourdomain.com/art-preview" />
+  <link rel="canonical" href="https://art-preview-nine.vercel.app/" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Today's Featured Artwork - AI & Cultural Fusion" />
   <meta property="og:description" content="A captivating blend of tradition and technology. Discover today's featured artwork." />
-  <meta property="og:image" content="https://i.postimg.cc/VsGP0tZR/Chat-GPT-Image-Jul-6-2025-09-37-32-PM.png" />
-  <meta property="og:url" content="https://yourdomain.com/art-preview" />
+  <meta property="og:image" content="/android-chrome-512x512.png" />
+  <meta property="og:url" content="https://art-preview-nine.vercel.app/" />
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="en_US" />
   <meta property="fb:app_id" content="1041582204823118" />
@@ -25,8 +29,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Art of the Day | AI Meets Culture" />
   <meta name="twitter:description" content="Daily art that inspires—from sketches to fantasy, quotes to cultural fusion." />
-  <meta name="twitter:image" content="https://i.postimg.cc/VsGP0tZR/Chat-GPT-Image-Jul-6-2025-09-37-32-PM.png" />
+  <meta name="twitter:image" content="/android-chrome-512x512.png" />
 
+  <!-- Styles -->
   <style>
     :root {
       --bg-light: #fafafa;
@@ -104,7 +109,7 @@
 </head>
 <body>
   <header>
-    <img src="https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.2081-0/515861003_1042156591432346_1577443884477382267_n.jpg?..." alt="Art Logo">
+    <img src="/favicon-32x32.png" alt="Art Logo" />
     <button class="toggle-dark" onclick="toggleDarkMode()">🌓</button>
   </header>
 
@@ -112,9 +117,7 @@
     <h1 id="title">Art of the Day</h1>
     <p id="subtitle">Discover a fusion of AI and cultural art. Scroll through today’s selections below.</p>
 
-    <div class="carousel" id="carousel">
-      <!-- Images will auto-load here -->
-    </div>
+    <div class="carousel" id="carousel"></div>
 
     <div class="caption" id="caption">Freshly curated visuals every 24 hours.</div>
   </main>
@@ -138,9 +141,9 @@
 
   <script>
     const images = [
-      "https://i.postimg.cc/VsGP0tZR/Chat-GPT-Image-Jul-6-2025-09-37-32-PM.png",
-      "https://i.postimg.cc/wBNXWb1K/sample-art2.png",
-      "https://i.postimg.cc/BvYZhx1v/sample-art3.png"
+      "/android-chrome-192x192.png",
+      "/android-chrome-512x512.png",
+      "/apple-touch-icon.png"
     ];
 
     function loadImages() {
